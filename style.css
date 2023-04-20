@@ -1,0 +1,584 @@
+/*  GENERAL */
+
+* {
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #FFF;
+    text-decoration: none;
+}
+
+body {
+    height: 100%;
+    background-color: #0F1624;
+}
+
+#pageWrapper {
+    overflow-x: hidden;
+    position: relative;
+    height: 100%;
+    background-color: #0F1624;
+}
+
+.sectionWrapper {
+    width: 85%;
+    margin: auto
+}
+
+html {
+    font-size: 8px;
+    height: 100%;
+    background-color: #0F1624;
+    scroll-behavior: smooth;
+}
+
+.cursorPointer {
+    cursor: pointer;
+}
+
+.button {
+    background: rgb(148,93,214);
+    background: -moz-linear-gradient(90deg, rgba(148,93,214,1) 0%, rgba(105,120,209,1) 33%, rgba(19,173,199,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(148,93,214,1) 0%, rgba(105,120,209,1) 33%, rgba(19,173,199,1) 100%);
+    background: linear-gradient(90deg, rgba(148,93,214,1) 0%, rgba(105,120,209,1) 33%, rgba(19,173,199,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#945dd6",endColorstr="#13adc7",GradientType=1);
+}
+
+/*  HEADER   */
+
+#logoContainer {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: 50%;
+    height: 12.5%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #0F1624;
+    z-index: 999;
+}
+
+#logo {
+    width: 4rem;
+    margin-left: 7.5vw;
+}
+
+#logoName {
+    margin-left: 2rem;
+    font-size: 2rem;
+}
+
+#nav {
+    display: block;
+    position: fixed;
+    top: -100%; /* 11% while active in js else -100%*/
+    left: 25%;
+    width: 75%;
+    background-color: #162950;
+    padding-top: 3rem;
+    z-index: 900;
+    transition: all .5s;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+.navLi {
+    font-weight: 500;
+    font-size: 2.5rem;
+    position: relative;
+    left: 50%;
+    transform: translateX(-30%);
+    margin: 5.5rem 0;
+}
+
+#languageToggleContainer {
+    display: flex;
+    align-items: center;
+}
+
+#americanFlag {
+    font-size: 6rem;
+}
+
+#germanFlag {
+    font-size: 6rem;
+}
+
+
+
+/*  SWITCH  */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 45px;
+    height: 25.5px;
+    margin: 0 3rem;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #FFF;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 14px;
+    width: 14px;
+    left: 6px;
+    bottom: 6px;
+    background-color: #162950;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #FFF;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #022959;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(18.5px);
+    -ms-transform: translateX(18.5px);
+    transform: translateX(18.5px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+/*  SWITCH END  */
+
+#menuIconsContainer {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 12.5%;
+    background-color: #0F1624;
+    z-index: 999;
+}
+
+.menuIcons {
+    height: 4rem;
+    width: 4rem;
+    margin-right: 7.5vw;
+}
+
+#menuCross {
+    display: none;
+}
+
+#menuBurger {
+    display: block;
+}
+
+header {
+    height: 12.5%;
+}
+
+/*  MAIN    */
+
+main {
+    height: 87.5%;
+}
+
+/* Section 1 Hero    */
+
+#sectionOne {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#sectionOneWrapper {
+    height: 80%;
+    width: 85%;
+}
+
+#heroHeading {
+    font-weight: 600;
+    font-size: 4rem;
+    margin-bottom: 4rem;
+    z-index: 2;
+
+}
+
+#heroParagraph {
+    position: relative;
+    font-weight: 600;
+    font-size: 2.25rem;
+    color: #BCBCBC;
+    z-index: 2;
+    margin: 0 0 4rem 3rem;
+}
+
+#heroButton {
+    position: relative;
+    font-weight: 600;
+    font-size: 1.75rem;
+    height: 5rem;
+    width: 17.5rem;
+    margin: 0 0 0 6rem;
+    border: none;
+    border-radius: 3rem;
+    font-weight: 600;
+    font-size: 1.75rem;
+    z-index: 2;
+}
+
+#cube {
+    position: absolute;
+    left: 50%;
+    transform: translate(-35%, -20%);
+    height: 40rem;
+    z-index: 1;
+}
+
+/*  SECTION TWO PROJECTS    */
+
+#sectionTwo {
+    height: 300%;
+}
+
+#sectionTwoWrapper {
+    height: 100%;
+}
+
+#sectionTwoHeading {
+    font-size: 4rem;
+    font-weight: 600;
+    margin-left: 7.5%;
+}
+
+.project {
+    height: 26.7%;
+    margin: 12.5% auto 25% auto;
+    box-shadow: 0px 0px 3.5px 3.5px rgba(188, 188, 188, 0.4);
+    position: relative;
+    border-radius: 4rem 0 4rem 0;
+    padding: 2rem;
+}
+
+#projectThree {
+    margin-bottom: 0;
+}
+
+.imgContainer {
+    height: 35%;
+    max-width: 100%;
+}
+
+.projectPreview {
+    max-height: 100%;
+    max-width: 100%;
+    border-radius: 3rem 0 0 0 ;
+}
+
+.detailsContainer {
+    height: 65%;
+}
+
+.projectHeading {
+    font-weight: 600;
+    font-size: 2.25rem;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gradientBorderDiv {
+    width: 60%;
+    margin: auto;
+    height: .25rem;
+}
+
+.projectParagraph {
+    font-weight: 600;
+    font-size: 1.75rem;
+    height: 60%;
+    display: flex;
+    align-items: center;
+}
+
+.projectButtonDiv {
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+
+.projectButton {
+    border: none;
+    height: 5rem;
+    width: 16rem;
+    border-radius: 2.5rem;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+/* SECTION THREE TECH-STACK */
+
+#sectionThree {
+    height: 100%;
+    margin: 10rem auto;
+}
+
+#sectionThreeHeading {
+    font-size: 4rem;
+    font-weight: 600;  
+    margin-bottom: rem;
+    height: 12.5%;
+}
+
+#sectionThreeWrapper {
+    height: 87.5%;
+}
+
+#techWrapper {
+    height: 50%;
+}
+
+.technology {
+    height: 25%;
+}
+
+.technologyDetailsContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.technologyName {
+    font-size: 2.25rem;
+    font-weight: 600;
+    margin-left: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.technologyLevel {
+    font-size: 1.5;
+    font-weight: 600;
+    margin-right: 4rem;
+}
+
+.technologyBar {
+    height: 5rem;
+}
+
+.technologyBarBackground {
+    height: 1.5rem;
+    width: 85%;
+    background-color: #162950;
+    border-radius: 1rem;
+    position: absolute;
+    z-index: 0;
+}
+
+.technologyBarProgressAdvanced {
+    height: 1.5rem;
+    border-radius: 1rem;
+    width: 65%;
+    position: absolute;
+    z-index: 2;
+}
+
+.technologyBarProgressRegular {
+    height: 1.5rem;
+    border-radius: 1rem;
+    width: 45%;
+    position: absolute;
+    z-index: 2;
+}
+
+.technologyBarProgressBeginner {
+    height: 1.5rem;
+    border-radius: 1rem;
+    width: 25%;
+    position: absolute;
+    z-index: 2;
+}
+
+#additionalDiv {
+    min-height: 40%;
+}
+
+#additionalHeading {
+    font-weight: 600;
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    margin-top: 2rem;
+}
+
+#additionalSkillsList {
+    list-style-type: disc;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    'git teamwork'
+    'learning engagement'
+    'english english';
+    row-gap: 3rem;
+    column-gap: 4rem;
+}
+
+#additionalSkillsList li {
+    margin-left: 2.5rem;
+    font-weight: 600;
+    font-size: 2.25rem;
+}
+
+#liGit {
+    width: 100%;
+    grid-area: git;
+}
+
+#liTeamwork {
+    width: 100%;
+    grid-area: teamwork;
+}
+
+#liLearning {
+    width: 100%;
+    grid-area: learning;
+}
+
+#liEngagement {
+    width: 100%;
+    grid-area: engagement;
+}
+
+#liEnglish {
+    grid-area: english;
+    width: 100%;
+}
+
+/*  SECTION FOUR ABOUT  */
+
+#sectionFour {
+    height: calc(90% + 90px);
+    margin: 10% 0 0 0;
+}
+
+#sectionFourHeading {
+    font-weight: 600;
+    font-size: 4rem;
+    margin-bottom: 3rem;
+}
+
+#sectionFourParagraph {
+    font-weight: 600;
+    font-size: 1.75rem;
+}
+
+#emoji {
+    font-size: 3.5rem;
+    text-align: center;
+}
+
+/* FOOTER   */
+
+#footer {
+    height: 10%;
+    width: 100%;
+    position: absolute;
+}
+
+#footerWrapper {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#personalInformationContainer {
+    height: 100%;
+    margin-left: 7.5vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#callMe {
+    margin-right: 7.5vw;
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+#email {
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+#githubLogoContainer {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-right: 7.5vw;
+}
+
+#githubLogo {
+    height: 100%;
+}
+
+#githubLink {
+    height: 50%;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/*  SCROLL ADJUSTMENTS  */
+
+#sectionTwo::before {
+    content: "";
+    display: block;
+    height: 90px; /* Change this value to adjust scroll padding */
+    margin: -90px 0 0; /* Change this value to adjust scroll padding */
+}
+
+#sectionThree::before {
+    content: "";
+    display: block;
+    height: 90px; /* Change this value to adjust scroll padding */
+    margin: -90px 0 0; /* Change this value to adjust scroll padding */
+}
+
+#sectionFour::before {
+    content: "";
+    display: block;
+    height: 90px; /* Change this value to adjust scroll padding */
+    margin: 0px 0 0; /* Change this value to adjust scroll padding */
+}
