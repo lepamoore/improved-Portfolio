@@ -170,8 +170,8 @@ const liLearningEnglish = 'Quick learning';
 const liLearningGerman = 'ausgeprägte Lernfähigkeit';
 
 const liEnglish = document.getElementById('liEnglish');
-const liEnglishEnglish = "Good English";
-const liEnglishGerman = "Gutes Englisch";
+const liEnglishEnglish = "B1 - English";
+const liEnglishGerman = "B1 - Englisch";
 
 // Section 4 About me
 
