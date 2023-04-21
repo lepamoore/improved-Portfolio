@@ -104,7 +104,7 @@ const projectHeadingOneEnglish = 'MULTI-STEP-FORM';
 const projectHeadingOneGerman = 'MEHRSCHRITTIGE WEBAPP';
 
 const projectParagraphOne = document.getElementById('projectParagraphOne');
-const projectParagraphOneEnglish = "This is my first React app, and although it took time to fix the bugs, it was fun and I was impressed by its power. As a beginner, I know there is still more to learn about React's capabilities.";
+const projectParagraphOneEnglish = "This is my first React app, and although it took time to fix the bugs, it was fun and I was impressed by Reacts power. As a beginner, I know there is still more to learn about React's capabilities.";
 const projectParagraphOneGerman = "Dieses Projekt ist meine erste React-SPA. Das Schönste an dem Projekt war, dass ich gemerkt habe, wie mächtig React ist und wie viel man mit wenig Code erreichen kann.";
 
 const projectButtonOne = document.getElementById('projectButtonOne');
@@ -118,7 +118,7 @@ const projectHeadingTwoEnglish = 'AGENCY WEBPAGE';
 const projectHeadingTwoGerman = 'WEBPAGE EINER AGENTUR';
 
 const projectParagraphTwo = document.getElementById('projectParagraphTwo');
-const projectParagraphTwoEnglish = "I improved my CSS skills on this project with a design of overlapping layers. I also gained experience with responsive JavaScript, even though it wasn't perfect at the time.";
+const projectParagraphTwoEnglish = "I improved my CSS skills on this project with a complex design of overlapping layers. And i gained some experience with responsive JavaScript as well.";
 const projectParagraphTwoGerman = "Durch dieses Projekt konnte ich meine CSS-Layout-Skills verbessern. Außerdem konnte ich erste Erfahrungen mit responsivem JavaScript sammeln";
 
 const projectButtonTwo = document.getElementById('projectButtonTwo');
@@ -132,7 +132,7 @@ const projectHeadingThreeEnglish = 'CSS GRID PROJECT';
 const projectHeadingThreeGerman = 'CSS GRID PROJEKT';
 
 const projectParagraphThree = document.getElementById('projectParagraphThree');
-const projectParagraphThreeEnglish = "This was one of my starter projects where I learned CSS Flexbox and CSS Grid. Although I prefer Flexbox, I know having a solid understanding of CSS Grid is also important.";
+const projectParagraphThreeEnglish = "Although this project was rather small, it had a big impact on my development as a frontend developer, as I extensively worked with CSS Grid here.";
 const projectParagraphThreeGerman = "Obwohl dieses Projekt eher klein war, hatte es einen großen Einfluss auf meine Entwicklung als Frontend-Entwickler, da ich mich hier intensiv mit CSS Grid beschäftigt habe."
 
 const projectButtonThree = document.getElementById('projectButtonThree');
@@ -180,8 +180,8 @@ const sectionFourHeadingEnglish = "About me";
 const sectionFourHeadingGerman = 'Über mich';
 
 const sectionFourParagraph = document.getElementById('sectionFourParagraph');
-const sectionFourParagraphEnglish = "Hello, I'm Leon - I've gotten lost in a maze of HTML, CSS, and JavaScript, and I love it! I was born in Cologne and now I live in Berlin, working hard to become a frontend developer. I quit my last job to pursue my goals. Anyway, if you like what you've read so far and think I could be a great fit for your team, feel free to contact me.<br> I'd love to chat!"
-const sectionFourParagraphGerman = 'Hallo, ich bin Leon - Ich habe mich in einem Labyrinth aus HTML, CSS und JavaScript verirrt und ich liebe es! Ich wurde in Köln geboren, lebe jetzt in Berlin und arbeite hart daran, ein Frontend-Entwickler zu werden. Ich habe meinen letzten Job aufgegeben, um meine Ziele zu verfolgen. Wenn Ihnen das, was Sie bisher gesehen haben, gefällt und Sie denken, dass ich gut in Ihr Team passen würde, bitte zögern Sie nicht, mich zu kontaktieren.<br> Ich freue mich darauf, Sie kennenzulernen!';
+const sectionFourParagraphEnglish = "Hello, I'm Leon - I've gotten lost in a maze of HTML, CSS, and JavaScript, and I love it! I was born in Cologne and now I live in Berlin, working hard to improve my skills as a frontend developer. I quit my last job to pursue my goals. Anyway, if you like what you've read so far and think I could be a great fit for your team, feel free to contact me.<br> I'd love to chat!"
+const sectionFourParagraphGerman = 'Hallo, ich bin Leon - Ich habe mich in einem Labyrinth aus HTML, CSS und JavaScript verirrt und ich liebe es! Ich wurde in Köln geboren und lebe nun in Berlin, wo ich hart daran arbeite, meine Fähigkeiten als Frontend-Entwickler zu verbessern. Ich habe meinen letzten Job aufgegeben, um meine Ziele zu verfolgen. Wenn Ihnen das, was Sie bisher gesehen haben, gefällt und Sie denken, dass ich gut in Ihr Team passen würde, bitte zögern Sie nicht, mich zu kontaktieren.<br> Ich freue mich darauf, Sie kennenzulernen!';
 
 // Footer
 

@@ -101,6 +101,17 @@ nav ul {
     margin: 5.5rem 0;
 }
 
+.navLiText:hover {
+    border-bottom: 5px solid; 
+    border-image: (
+        to bottom,
+        transparent,
+        #FFF
+    ) 1 100%;
+    transition: all .5s;
+    padding-bottom: .5rem;
+}
+
 #languageToggleContainer {
     display: flex;
     align-items: center;
@@ -773,17 +784,6 @@ header {
         transform: none;
         margin: 0;
         font-size: 2rem;
-    }
-
-    .navLiText:hover {
-        border-bottom: 5px solid; 
-        border-image: (
-            to bottom,
-            transparent,
-            #FFF
-        ) 1 100%;
-        transition: all .5s;
-        padding-bottom: .5rem;
     }
 
     #languageToggleContainer {
