@@ -27,10 +27,10 @@
                 </div>
                 <nav id="nav">
                     <ul>
-                        <li class="navLi"><a href="#sectionTwo" id="navLinkOne">Projects</a></li>
-                        <li class="navLi"><a href="#sectionThree" id="navLinkTwo">Tech-Stack</a></li>
-                        <li class="navLi"><a href="#sectionFour" id="navLinkThree">About me</a></li>
-                        <li class="navLi">
+                        <li class="navLi navLiText"><a href="#sectionTwo" id="navLinkOne">Projects</a></li>
+                        <li class="navLi navLiText"><a href="#sectionThree" id="navLinkTwo">Tech-Stack</a></li>
+                        <li class="navLi navLiText"><a href="#sectionFour" id="navLinkThree">About me</a></li>
+                        <li class="navLi" id="languageToggleContainerLi">
 
                             <div id="languageToggleContainer">
                                 <span id="americanFlag">🇺🇸</span>
@@ -67,7 +67,7 @@
                 <section id="sectionOne">
                     <div id="sectionOneWrapper" class="sectionWrapper">
                         <h1 id="heroHeading">My name is Leon Moore</h1>
-                        <p id="heroParagraph">I'm a 21 years old self-taught Frontend-Developer based in Berlin.
+                        <p id="heroParagraph">I'm a self-taught Frontend-Developer based in Berlin.
                             This is my Portfolio.<br>Have a look around!
                         </p>
                         <a href="#sectionTwo"><button class="button" id="heroButton">Let's begin</button></a>
@@ -203,7 +203,7 @@
                                 <div class="gradientBorderDiv button"></div>
                                 <p class="projectParagraph" id="projectParagraphOne">This is my first React app, and although it took time to fix the bugs, it was fun and I was impressed by its power. As a beginner, I know there is still more to learn about React's capabilities.</p>
                                 <div class='projectButtonDiv'>
-                                    <a href="https://lepamoore.github.io/multi-step-form/" target="_blank"><button class="button projectButton" id="projectButtonOne">Look it up!</button></a>
+                                    <a href="https://lepamoore.github.io/multi-step-form/" target="_blank"><button class="button projectButton" id="projectButtonOne">Look it up</button></a>
                                 </div>
                             </div>
                         </div>
@@ -217,7 +217,7 @@
                                 <div class="gradientBorderDiv button"></div>
                                 <p class="projectParagraph" id="projectParagraphTwo">I improved my CSS skills on this project with a complex design of overlapping layers. I also gained experience with responsive JavaScript, even though it wasn't perfect at the time.</p>
                                 <div class='projectButtonDiv'>
-                                    <a href="https://lepamoore.github.io/frontendmentorio-project5/" target="_blank"><button class="button projectButton" id="projectButtonTwo">Look it up!</button></a>
+                                    <a href="https://lepamoore.github.io/frontendmentorio-project5/" target="_blank"><button class="button projectButton" id="projectButtonTwo">Look it up</button></a>
                                 </div>
                             </div>
                         </div>
@@ -231,7 +231,7 @@
                                 <div class="gradientBorderDiv button"></div>
                                 <p class="projectParagraph" id="projectParagraphThree">This was one of my starter projects where I learned CSS Flexbox and CSS Grid. Although I prefer Flexbox, I know having a solid understanding of CSS Grid is also important.</p>
                                 <div class='projectButtonDiv'>
-                                    <a href="https://lepamoore.github.io/Frontendmentorio-Project3-Grid/" target="_blank"><button class="button projectButton" id="projectButtonThree">Look it up!</button></a>
+                                    <a href="https://lepamoore.github.io/Frontendmentorio-Project3-Grid/" target="_blank"><button class="button projectButton" id="projectButtonThree">Look it up</button></a>
                                 </div>
                             </div>
                         </div>
@@ -245,7 +245,7 @@
                         <div class="technology">
                             <div class="technologyDetailsContainer">
                                 <span class="technologyName">HTML</span>
-                                <span class="technologyLevel">Advanced</span>
+                                <span class="technologyLevel" id="technologyOneLevel">Advanced</span>
                             </div>
                             <div class="technologyBar">
                                 <div class="technologyBarBackground"></div>
@@ -255,7 +255,7 @@
                         <div class="technology">
                             <div class="technologyDetailsContainer">
                                 <span class="technologyName">CSS</span>
-                                <span class="technologyLevel">Advanced</span>
+                                <span class="technologyLevel" id="technologyTwoLevel">Advanced</span>
                             </div>
                             <div class="technologyBar">
                                 <div class="technologyBarBackground"></div>
@@ -265,17 +265,17 @@
                         <div class="technology">
                             <div class="technologyDetailsContainer">
                                 <span class="technologyName">JavaScript</span>
-                                <span class="technologyLevel">Regular</span>
+                                <span class="technologyLevel" id="technologyThreeLevel">Regular</span>
                             </div>
                             <div class="technologyBar">
                                 <div class="technologyBarBackground"></div>
                                 <div class="technologyBarProgressRegular button"></div>
                             </div>
                         </div>
-                        <div class="technology">
+                        <div class="technology" id="lastTechnology">
                             <div class="technologyDetailsContainer">
                                 <span class="technologyName">React</span>
-                                <span class="technologyLevel">Beginner</span>
+                                <span class="technologyLevel" id="technologyFourLevel">Beginner</span>
                             </div>
                             <div class="technologyBar">
                                 <div class="technologyBarBackground"></div>
@@ -291,6 +291,7 @@
                                 <li id="liLearning">Quick learning</li>
                                 <li id="liEngagement">Engagement</li>
                                 <li id="liEnglish">Good English</li>
+                                <li id="liBash">Bash</li>
                             </ul>
                         </div>
                     </div>
@@ -298,7 +299,7 @@
                 <section id="sectionFour">
                     <div id="sectionFourWrapper" class="sectionWrapper">
                         <h2 id="sectionFourHeading">About Me</h2>
-                        <p id="sectionFourParagraph">Hey, I'm Leon - a guy who got lost in HTML, CSS, and JavaScript and can't find his way out anymore. But hey, to be honest, I don't want to find my way out either. I was born in Cologne, but now I live in Berlin and I'm working hard to become a frontend developer. I quit my last job to pursue my goals. I know I have what it takes - especially when I think about how much discipline I've gained lately to reduce my chocolate consumption. (Okay, it's still a work in progress, but you can't have everything at once.) Anyway, if you like what you've read so far and think I could be a great fit for your team, feel free to contact me. I'd love to chat! </p>
+                        <p id="sectionFourParagraph">Hello, I'm Leon - I've gotten lost in a maze of HTML, CSS, and JavaScript, and I love it! I was born in Cologne and now I live in Berlin, working hard to become a frontend developer. I quit my last job to pursue my goals. Anyway, if you like what you've seen so far and think I could be a great fit for your team, feel free to contact me.<br> I'd love to chat!</p>
                         <br><p id="emoji">😉</p>
                     </div>
                 </section>

@@ -10,14 +10,12 @@
 }
 
 body {
-    height: 100%;
     background-color: #0F1624;
 }
 
 #pageWrapper {
     overflow-x: hidden;
     position: relative;
-    height: 100%;
     background-color: #0F1624;
 }
 
@@ -28,9 +26,9 @@ body {
 
 html {
     font-size: 8px;
-    height: 100%;
     background-color: #0F1624;
     scroll-behavior: smooth;
+    min-width: 374.9px;
 }
 
 .cursorPointer {
@@ -47,12 +45,18 @@ html {
 
 /*  HEADER   */
 
+header {
+    height: 12.5vh;
+    min-height: 83.375px;
+}
+
 #logoContainer {
     display: flex;
     align-items: center;
     justify-content: left;
     width: 50%;
-    height: 12.5%;
+    height: 12.5vh;
+    min-height: 83.375px;
     position: fixed;
     top: 0;
     left: 0;
@@ -73,13 +77,15 @@ html {
 #nav {
     display: block;
     position: fixed;
-    top: -100%; /* 11% while active in js else -100%*/
+    top: -200%; /* 11% while active in js else -100%*/
     left: 25%;
     width: 75%;
     background-color: #162950;
     padding-top: 3rem;
     z-index: 900;
     transition: all .5s;
+    visibility: hidden;
+    opacity: 0;
 }
 
 nav ul {
@@ -110,12 +116,12 @@ nav ul {
 
 
 
-/*  SWITCH  */
+/*  relative SWITCH  */
 .switch {
     position: relative;
     display: inline-block;
-    width: 45px;
-    height: 25.5px;
+    width: 4.921875rem;
+    height: 2.7890625rem;
     margin: 0 3rem;
   }
   
@@ -142,10 +148,10 @@ nav ul {
   .slider:before {
     position: absolute;
     content: "";
-    height: 14px;
-    width: 14px;
-    left: 6px;
-    bottom: 6px;
+    height: 1.53125rem;
+    width: 1.53125rem;
+    left: 0.65625rem;
+    bottom: 0.65625rem;
     background-color: #162950;
     -webkit-transition: .4s;
     transition: .4s;
@@ -160,14 +166,14 @@ nav ul {
   }
   
   input:checked + .slider:before {
-    -webkit-transform: translateX(18.5px);
-    -ms-transform: translateX(18.5px);
-    transform: translateX(18.5px);
+    -webkit-transform: translateX(2.0234375rem);
+    -ms-transform: translateX(2.0234375rem);
+    transform: translateX(2.0234375rem);
   }
   
   /* Rounded sliders */
   .slider.round {
-    border-radius: 34px;
+    border-radius: 3.71875rem;
   }
   
   .slider.round:before {
@@ -183,9 +189,14 @@ nav ul {
     position: fixed;
     top: 0;
     right: 0;
-    height: 12.5%;
+    height: 12.5vh;
+    min-height: 83.375px;
     background-color: #0F1624;
     z-index: 999;
+}
+
+.menuIcons:hover {
+    cursor: pointer;
 }
 
 .menuIcons {
@@ -203,41 +214,40 @@ nav ul {
 }
 
 header {
-    height: 12.5%;
+    height: 12.5vh;
+    min-height: 83.375px;
 }
 
 /*  MAIN    */
 
-main {
-    height: 87.5%;
-}
-
 /* Section 1 Hero    */
 
 #sectionOne {
-    height: 100%;
+    height: 87.5vh;
+    min-height: 583.625px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 #sectionOneWrapper {
-    height: 80%;
     width: 85%;
+    font-size: 1.25vh;
+
 }
 
 #heroHeading {
     font-weight: 600;
     font-size: 4rem;
     margin-bottom: 4rem;
+    margin-top: -25rem;
     z-index: 2;
-
 }
 
 #heroParagraph {
     position: relative;
     font-weight: 600;
-    font-size: 2.25rem;
+    font-size: 2rem;
     color: #BCBCBC;
     z-index: 2;
     margin: 0 0 4rem 3rem;
@@ -255,7 +265,45 @@ main {
     font-weight: 600;
     font-size: 1.75rem;
     z-index: 2;
+    transition: all .3s;
+    overflow: hidden;
 }
+
+#heroButton:hover {
+    color: #fff;
+    cursor: pointer;
+  }
+
+#heroButton:hover::before {
+    width: 100%;
+}
+
+#heroButton::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: linear-gradient(90deg, rgba(148,93,214,1) 0%, rgba(105,120,209,1) 33%, rgba(19,173,199,1) 100%);
+    border-radius: 10rem;
+    z-index: -2;
+}
+
+#heroButton::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(148,93,214,1) 0%, rgba(105,120,209,1) 66%, transparent 100%) ;
+    transition: all .3s;
+    border-radius: 10rem;
+    z-index: -1;
+}
+
+/*rgba(148,93,214,.85)*/
 
 #cube {
     position: absolute;
@@ -268,11 +316,7 @@ main {
 /*  SECTION TWO PROJECTS    */
 
 #sectionTwo {
-    height: 300%;
-}
-
-#sectionTwoWrapper {
-    height: 100%;
+    min-height: 583.625px;
 }
 
 #sectionTwoHeading {
@@ -282,8 +326,9 @@ main {
 }
 
 .project {
-    height: 26.7%;
-    margin: 12.5% auto 25% auto;
+    height: 75vh;
+    min-height: 500.25px;
+    margin: 6.25rem auto 12.5rem auto;
     box-shadow: 0px 0px 3.5px 3.5px rgba(188, 188, 188, 0.4);
     position: relative;
     border-radius: 4rem 0 4rem 0;
@@ -297,25 +342,30 @@ main {
 .imgContainer {
     height: 35%;
     max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .projectPreview {
     max-height: 100%;
-    max-width: 100%;
+    max-width: 90%;
     border-radius: 3rem 0 0 0 ;
 }
 
 .detailsContainer {
     height: 65%;
+    font-size: 1.25vh;
 }
 
 .projectHeading {
     font-weight: 600;
-    font-size: 2.25rem;
+    font-size: 2.5rem;/*2.25rem;*/
     height: 20%;
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
 }
 
 .gradientBorderDiv {
@@ -326,10 +376,12 @@ main {
 
 .projectParagraph {
     font-weight: 600;
-    font-size: 1.75rem;
+    font-size: 2rem;/*1.75rem;*/
     height: 60%;
     display: flex;
     align-items: center;
+    max-width: 90%;
+    margin: auto;
 }
 
 .projectButtonDiv {
@@ -337,38 +389,76 @@ main {
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    font-size: 1.25vh;
+    max-width: 90%;
+    margin: auto;
 }
-
 
 .projectButton {
     border: none;
-    height: 5rem;
-    width: 16rem;
-    border-radius: 2.5rem;
+    height: 5.5rem;
+    width: 18rem;
+    border-radius: 3rem;
     font-weight: 600;
-    font-size: 1.5rem;
+    font-size: 2rem;
+    z-index: 2;
+    transition: all .3s;
+    position: relative;
+    overflow: hidden;
+    margin-top: 1rem;
+}
+
+.projectButton:hover {
+    color: #fff;
+    cursor: pointer;
+}
+
+.projectButton:hover::before {
+    width: 100%;
+}
+
+.projectButton::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: linear-gradient(90deg, rgba(148,93,214,1) 0%, rgba(105,120,209,1) 33%, rgba(19,173,199,1) 100%);
+    border-radius: 10rem;
+    z-index: -2;
+}
+
+.projectButton::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(148,93,214,1) 0%, rgba(105,120,209,1) 66%, transparent 100%) ;
+    transition: all .3s;
+    border-radius: 10rem;
+    z-index: -1;
 }
 
 /* SECTION THREE TECH-STACK */
 
 #sectionThree {
-    height: 100%;
-    margin: 10rem auto;
+    min-height: 583.625px;
+    margin: 10rem auto 10rem auto;
 }
 
 #sectionThreeHeading {
     font-size: 4rem;
     font-weight: 600;  
-    margin-bottom: rem;
-    height: 12.5%;
-}
-
-#sectionThreeWrapper {
-    height: 87.5%;
+    margin: 4rem 7.5%;
 }
 
 #techWrapper {
-    height: 50%;
+    height: 50vh;
+    min-height: 333.5px;
+
 }
 
 .technology {
@@ -379,17 +469,18 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-size: 1.25vh;
 }
 
 .technologyName {
-    font-size: 2.25rem;
+    font-size: 2rem;
     font-weight: 600;
     margin-left: 2rem;
     margin-bottom: 0.5rem;
 }
 
 .technologyLevel {
-    font-size: 1.5;
+    font-size: 1rem;
     font-weight: 600;
     margin-right: 4rem;
 }
@@ -431,9 +522,11 @@ main {
     z-index: 2;
 }
 
-#additionalDiv {
-    min-height: 40%;
+#lastTechnology {
+    margin-bottom: 6rem;
 }
+
+
 
 #additionalHeading {
     font-weight: 600;
@@ -450,7 +543,7 @@ main {
     grid-template-areas: 
     'git teamwork'
     'learning engagement'
-    'english english';
+    'english bash';
     row-gap: 3rem;
     column-gap: 4rem;
 }
@@ -486,22 +579,29 @@ main {
     width: 100%;
 }
 
+#liBash {
+    grid-area: bash;
+    width: 100%;
+}
+
 /*  SECTION FOUR ABOUT  */
 
 #sectionFour {
-    height: calc(90% + 90px);
-    margin: 10% 0 0 0;
+    height: 87.5vh;
+    min-height: 583.625px;
+    margin: 15rem 0 0 0;
+    font-size: 1.25vh;
 }
 
 #sectionFourHeading {
     font-weight: 600;
     font-size: 4rem;
-    margin-bottom: 3rem;
+    margin: 0 0 3rem 0;
 }
 
 #sectionFourParagraph {
     font-weight: 600;
-    font-size: 1.75rem;
+    font-size: 2rem;
 }
 
 #emoji {
@@ -512,9 +612,11 @@ main {
 /* FOOTER   */
 
 #footer {
-    height: 10%;
+    height: 10vh;
+    min-height: 66.7px;
     width: 100%;
     position: absolute;
+    bottom: 0;
 }
 
 #footerWrapper {
@@ -530,17 +632,18 @@ main {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    font-size: 1.25vh;
 }
 
 #callMe {
     margin-right: 7.5vw;
     font-weight: 600;
-    font-size: 1.3rem;
+    font-size: 1.25rem;
 }
 
 #email {
     font-weight: 600;
-    font-size: 1.3rem;
+    font-size: 1.25rem;
 }
 
 #githubLogoContainer {
@@ -565,8 +668,8 @@ main {
 #sectionTwo::before {
     content: "";
     display: block;
-    height: 90px; /* Change this value to adjust scroll padding */
-    margin: -90px 0 0; /* Change this value to adjust scroll padding */
+    height: 120px; /* Change this value to adjust scroll padding */
+    margin: -120px 0 0; /* Change this value to adjust scroll padding */
 }
 
 #sectionThree::before {
@@ -576,9 +679,281 @@ main {
     margin: -90px 0 0; /* Change this value to adjust scroll padding */
 }
 
-#sectionFour::before {
+
+
+@media screen and (min-width: 766.5px) and (max-width: 1023px) {
+    html {
+        font-size: 11px;
+    }
+
+    #sectionOne {
+        padding-top: 6rem;
+    }
+
+    #cube {
+        left: 50%;
+        transform: translate(-25%);
+    }
+
+    .project {
+        max-width: 90%;
+    }
+
+    .projectPreview {
+        max-width: 85%;
+    }
+
+    .projectParagraph {
+        max-width: 85%;
+        margin: auto;
+    }
+
+    .projectButtonDiv {
+        max-width: 85%;
+        margin: auto;
+    }
+
+    #sectionTwo::before {
+        height: 160px; /* Change this value to adjust scroll padding */
+        margin: -160px 0 0; /* Change this value to adjust scroll padding */
+    }
+    
+    #sectionThree::before {
+        height: 160px; /* Change this value to adjust scroll padding */
+        margin: -160px 0 0; /* Change this value to adjust scroll padding */
+    }
+
+    #callMe {
+        font-size: 1.25rem;
+    }
+    
+    #email {
+        font-size: 1.25rem;
+    }
+}
+
+@media screen and (min-width: 1023.5px) {
+    html {
+        font-size: 12px;
+    }
+
+    /*   HEADER    */
+
+    #logoContainer {
+        width: 30%;
+    }
+
+    #nav {
+        align-items: center;
+        justify-content: center;
+        padding: 0 0 0 3rem;
+        display: flex;
+        height: 12.5vh;
+        min-height: 83.375px;
+        position: fixed;
+        top: 00%;
+        left: 30%;
+        width: 70%;
+        background-color: #0F1624;
+        visibility: visible;
+        opacity: 1;
+    }
+
+    #nav ul {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .navLi {
+        display: inline-block;
+        position: static;
+        transform: none;
+        margin: 0;
+        font-size: 2rem;
+    }
+
+    .navLiText:hover {
+        border-bottom: 5px solid; 
+        border-image: (
+            to bottom,
+            transparent,
+            #FFF
+        ) 1 100%;
+        transition: all .5s;
+        padding-bottom: .5rem;
+    }
+
+    #languageToggleContainer {
+        font-size: .75rem;
+    }
+
+
+    #germanFlag {
+        font-size: 4rem;
+    }
+
+    /*  relative SWITCH  */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 4.921875rem;
+    height: 2.7890625rem;
+    margin: 0 2rem;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #FFF;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
     content: "";
-    display: block;
-    height: 90px; /* Change this value to adjust scroll padding */
-    margin: 0px 0 0; /* Change this value to adjust scroll padding */
+    height: 1.53125rem;
+    width: 1.53125rem;
+    left: 0.65625rem;
+    bottom: 0.65625rem;
+    background-color: #162950;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #FFF;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #022959;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(2.0234375rem);
+    -ms-transform: translateX(2.0234375rem);
+    transform: translateX(2.0234375rem);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 3.7187rem;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+/*  SWITCH END  */
+
+    #americanFlag {
+        font-size: 4rem;
+    }
+
+    #menuIconsContainer {
+        display: none;
+    }
+
+    /*  hero section / section one    */
+
+    #sectionOne {
+        padding-top: 6rem;
+    }
+
+    #cube {
+        position: absolute;
+        left: 50%;
+        transform: translate(10%, -50%);
+        height: 40rem;
+        z-index: 1;
+    }
+
+    /*  SECTION TWO / PROJECTS*/
+
+    #sectionTwoWrapper {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .project {
+        height: 80vh;
+        min-height: 533.6px;
+        margin: 6.25rem auto 6.25rem auto;
+        box-shadow: 0px 0px 3.5px 3.5px rgba(188, 188, 188, 0.4);
+        position: relative;
+        border-radius: 4rem 0 4rem 0;
+        padding: 2rem;
+        width: 40%;
+        max-width: 90%;
+
+    }
+
+    .projectPreview {
+        max-width: 85%;
+    }
+
+    .projectButtonDiv {
+        max-width: 85%;
+        margin: auto;
+    }
+
+    .projectButton {
+        font-size: 1.75rem;
+        height: 5rem;
+        width: 15rem;
+        border-radius: 3rem;
+        margin-top: 0rem;
+    }
+
+    .projectHeading {
+        font-size: 2rem;
+        margin: .1rem 0;
+    }
+
+    .projectParagraph {
+        font-size: 1.35rem;
+        max-width: 85%;
+        margin: auto;
+    }
+
+    #sectionThreeHeading {
+        margin-top: 6.25rem;
+        margin-bottom: 6.25rem ;
+    }
+
+    #additionalHeading {
+        margin-top: 8rem;
+        margin-bottom: 8rem
+    }
+
+    #additionalSkillsList li {
+        margin-left: 25%;
+    }
+
+    #callMe {
+        font-size: 1.25rem;
+    }
+    
+    #email {
+        font-size: 1.25rem;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
 }
