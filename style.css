@@ -692,6 +692,7 @@ header {
 
 #githubLogo {
     height: 100%;
+    width: auto;
 }
 
 #githubLink {

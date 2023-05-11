@@ -128,12 +128,12 @@ const projectButtonTwoGerman = 'Öffnen';
 // Project 3
 
 const projectHeadingThree = document.getElementById('projectHeadingThree');
-const projectHeadingThreeEnglish = 'CSS GRID PROJECT';
-const projectHeadingThreeGerman = 'CSS GRID PROJEKT';
+const projectHeadingThreeEnglish = 'REACT SPACE PROJECT';
+const projectHeadingThreeGerman = 'REACT WELTALL PROJEKT';
 
 const projectParagraphThree = document.getElementById('projectParagraphThree');
-const projectParagraphThreeEnglish = "Although this project was rather small, it had a big impact on my development as a frontend developer, as I extensively worked with CSS Grid here.";
-const projectParagraphThreeGerman = "Obwohl dieses Projekt eher klein war, hatte es einen großen Einfluss auf meine Entwicklung als Frontend-Entwickler, da ich mich hier intensiv mit CSS Grid beschäftigt habe."
+const projectParagraphThreeEnglish = "My most recent Project. Im pretty proud of it since it performs very well. Performance, Accessibility and SEO on it's Peak!";
+const projectParagraphThreeGerman = "Mein aktuellstes Projekt. Ich bin ziemlich Stolz darauf, denn es performt sehr gut. Performance, Accessibility und SEO, perfekt getroffen!"
 
 const projectButtonThree = document.getElementById('projectButtonThree');
 const projectButtonThreeEnglish = 'Look it up';
@@ -180,8 +180,8 @@ const sectionFourHeadingEnglish = "About me";
 const sectionFourHeadingGerman = 'Über mich';
 
 const sectionFourParagraph = document.getElementById('sectionFourParagraph');
-const sectionFourParagraphEnglish = "Hello, I'm Leon - I've gotten lost in a maze of HTML, CSS, and JavaScript, and I love it! I was born in Cologne and now I live in Berlin, working hard to improve my skills as a frontend developer. I quit my last job to pursue my goals. Anyway, if you like what you've read so far and think I could be a great fit for your team, feel free to contact me.<br> I'd love to chat!"
-const sectionFourParagraphGerman = 'Hallo, ich bin Leon - Ich habe mich in einem Labyrinth aus HTML, CSS und JavaScript verirrt und ich liebe es! Ich wurde in Köln geboren und lebe nun in Berlin, wo ich hart daran arbeite, meine Fähigkeiten als Frontend-Entwickler zu verbessern. Ich habe meinen letzten Job aufgegeben, um meine Ziele zu verfolgen. Wenn Ihnen das, was Sie bisher gesehen haben, gefällt und Sie denken, dass ich gut in Ihr Team passen würde, bitte zögern Sie nicht, mich zu kontaktieren.<br> Ich freue mich darauf, Sie kennenzulernen!';
+const sectionFourParagraphEnglish = "Hello, I'm Leon - I've gotten lost in a maze of HTML, CSS, and JavaScript, and I love it! If you like what you've seen so far and think I could be a great fit for your team, feel free to contact me.<br> I'd love to chat!"
+const sectionFourParagraphGerman = 'Hallo, ich bin Leon - Ich habe mich in einem Labyrinth aus HTML, CSS und JavaScript verirrt und ich liebe es! Wenn Ihnen das, was Sie bisher gesehen haben, gefällt und Sie denken, dass ich gut in Ihr Team passen würde, bitte zögern Sie nicht, mich zu kontaktieren.<br> Ich freue mich darauf, Sie kennenzulernen!';
 
 // Footer
 
