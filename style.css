@@ -369,6 +369,7 @@ header {
     position: relative;
     border-radius: 4rem 0 4rem 0;
     padding: 2rem;
+    width: 100%;
 }
 
 #projectThree {
@@ -377,13 +378,14 @@ header {
 
 .imgContainer {
     height: 35%;
-    max-width: 100%;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .projectPreview {
+    max-width: 100%;
     max-height: 100%;
     width: auto;
     height: auto;
