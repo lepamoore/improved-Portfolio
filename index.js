@@ -186,8 +186,8 @@ const sectionFourParagraphGerman = 'Hallo, ich bin Leon - Ich habe mich in einem
 // Footer
 
 const callMe = document.getElementById('callMe');
-const callMeEnglish = "Call me:<br>0176 461 989 29";
-const callMeGerman = "Rufnummer:<br>0176 461 989 29";
+const callMeEnglish = "Call me:<br>0151 207 256 97";
+const callMeGerman = "Rufnummer:<br>0151 207 256 97";
 
 // Toggle Language function
 
