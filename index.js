@@ -84,8 +84,8 @@ const heroHeadingEnglish = 'My name is Leon Moore';
 const heroHeadingGerman = 'Mein Name ist Leon Moore';
 
 const heroParagraph = document.getElementById('heroParagraph');
-const heroParagraphEnglish = "I'm a self-taught Frontend-Developer based in Berlin. This is my Portfolio.<br>Have a look around!";
-const heroParagraphGerman = 'Ich bin ein selbstlernender Frontend-Entwickler aus Berlin. Das ist mein Portfolio. <br> Schauen Sie sich gerne um!';
+const heroParagraphEnglish = "I'm a Frontend-Developer based in Berlin. This is my Portfolio.<br>Have a look around!";
+const heroParagraphGerman = 'Ich bin Frontend-Entwickler aus Berlin. Das ist mein Portfolio. <br> Schauen Sie sich gerne um!';
 
 const heroButton = document.getElementById('heroButton');
 const heroButtonEnglish = "Let's begin";

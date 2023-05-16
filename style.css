@@ -113,6 +113,10 @@ header {
     opacity: 0;
 }
 
+#navLinkThree {
+    display: none;
+}
+
 nav ul {
     list-style-type: none;
 }
@@ -485,7 +489,7 @@ header {
 
 #sectionThree {
     min-height: 583.625px;
-    margin: 10rem auto 10rem auto;
+    margin: 10rem auto 25rem auto;
 }
 
 #sectionThreeHeading {
@@ -630,6 +634,7 @@ header {
     min-height: 583.625px;
     margin: 15rem 0 0 0;
     font-size: 1.25vh;
+    display: none;
 }
 
 #sectionFourHeading {
